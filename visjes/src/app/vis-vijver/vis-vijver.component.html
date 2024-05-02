@@ -1,0 +1,7 @@
+<section class="listing">
+    <img class="listing-photo" [src]="visVijver.photo" alt="Exterior photo of {{ visVijver.name }}"
+        crossorigin />
+    <h2 class="listing-heading">{{ visVijver.name }}</h2>
+    <p class="listing-location">{{ visVijver.city }}, {{ visVijver.state }}</p>
+    <a [routerLink]="['/details', visVijver.id]">Learn More</a>
+</section>
